@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzarendelés Form</title>
+</head>
+<body>
+    <h1>pizza rendelo urlap</h1>
+    
+    <form>
+        <label> Név:
+            <input type="text" name="name" placeholder="Név" maxlength="50" required> 
+        </label>
+        <br><br>
+        <label> Telefonszám:
+            <input type="tel" name="phone" placeholder="+36202427679" required maxlength="15">
+        </label>
+        <br><br>
+        <label> Email:
+            <input type="email" name="email" placeholder="Pl. kalap@gmail.com" maxlength="25" required> 
+
+        </label>
+        <br><br>
+        <fieldset>
+            <legend>Pizza mérete</legend>
+            <label>
+                <input type="radio" name="size" value="kicsi" required> Kicsi 
+            </label>
+            <br>
+            <label >
+                <input type="radio" name="size" value="Közepes" required> Közepes
+            </label>
+            <br>
+            <label >
+                <input type="radio" name="size" value="Nagy" required> Nagy
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feltétek</legend>
+            <label>
+                <input type="checkbox" name="feltet" required> Mozzarella sajt 
+            </label>
+            <br>
+            <label >
+                <input type="checkbox" name="feltet" required> Feta sajt
+            </label>
+            <br>
+            <label >
+                <input type="checkbox" name="feltet" required> Kukorica
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="feltet" required> Bacon
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Megjegyzés</legend>
+            <textarea name="megjegyzés" id="megjegyzes_mezo" maxlength="200" placeholder="ide irhatod a megjegyzesed" rows="5" cols="100"></textarea>
+        </fieldset> 
+        <button>Elküldés</button>
+    </form>
+</body>
+</html>
