@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <a href="index.html">Vissza a fő oldalra</a>
+        <form method="post" action="https://httpbin.org/post">
+        <label> Név:
+            <input type="text" name="name" placeholder="Név" maxlength="50" required> 
+        </label>
+        
+        <label> Telefonszám:
+            <input type="tel" name="phone" placeholder="+36202427679" required maxlength="15">
+        </label>
+        
+        <label> Email:
+            <input type="email" name="email" placeholder="Pl. kalap@gmail.com" maxlength="25" required> 
+
+        </label>
+        <label> Telefonszám:
+            <input type="pass" name="password" placeholder="123456" required maxlength="25">
+        </label>
+
+        <button type ="submit">Elküldés</button>
+
+</body>
+</html>
